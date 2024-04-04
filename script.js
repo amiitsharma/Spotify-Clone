@@ -11,14 +11,9 @@ cards.forEach(card => {
         let imageWrapper = card.querySelector(".cover-pic");
         let computedStyle = window.getComputedStyle(imageWrapper);
         let image = computedStyle.getPropertyValue("background-image");
-        console.log(imageWrapper);
-
-        console.log("1" + image);
         let playListName = card.querySelector(".desc div:nth-child(1)").innerHTML;
         let playListDesc = card.querySelector(".desc div:nth-child(2)").innerHTML;
         removeAllChildren(songSection);
-        console.log("2" + playListName);
-        console.log("3" + playListDesc);
         let selectedPlayListCover = `<div class="content-wrapper-after-playlist-choosen">
         <div>
         <div>
